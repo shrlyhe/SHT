@@ -1,2 +1,2 @@
-# SHT-
+# SHT
 WHACK 2017
