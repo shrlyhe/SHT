@@ -176,18 +176,18 @@
 
 <!---MOVE SCRIPT TO HERE - GIVE PAGE TIME TO LOAD-->
 <script>
-  function sendUser() {
-    var userRef = firebase.database().ref('users');
-    var emailName=  document.getElementById("email").innerHTML;
-    var userID = document.getElementById("userID").innerHTML;
-    userRef.set({
-      username: userID,
-      email: emailName
+  // function sendUser() {
+  //   var userRef = firebase.database().ref('users');
+  //   var emailName=  document.getElementById("email").innerHTML;
+  //   var userID = document.getElementById("userID").innerHTML;
+  //   userRef.set({
+  //     username: userID,
+  //     email: emailName
 
-    });
-  }
-      // setTimer to force page to pause...
-      setTimeout(sendUser, 1000);
+  //   });
+  // }
+  //     // setTimer to force page to pause...
+  //     setTimeout(sendUser, 1000);
 
 
       ///send email...
