@@ -1,0 +1,84 @@
+@import url(github-light.css);
+
+
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  vertical-align: baseline;
+  font-size=100%;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+ol, ul {
+  list-style: none;
+  text-align: center;
+  
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*******************************************************************************
+Theme Styles
+*******************************************************************************/
+body {
+	padding: 0;
+	margin: 0;
+  background: url('https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTpFMXKQ6cW3ehgeU4CS9ebCUB0zTx0yJrMJ_3R0duXr7mzj17L') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  box-sizing: border-box;
+  color:#84bd00;
+  font-size: 30px;
+  font-family: proxima-nova,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+
+
+
+div {
+width: 100%;
+height: 100%;
+text-align: center;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 10px 0;
+  font-weight: 500;
+  color:#84bd00;
+  font-family: proxima_nova,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  letter-spacing: 2px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 50px;
+  font-weight: 500;
+}
