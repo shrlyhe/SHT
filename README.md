@@ -1,15 +1,11 @@
-# SHT -- WHACK 2017
-To do:
-1. Fix HTML 
+# SpotMe -- WHACK 2017
+## A pick-me-up based on your frequently listened tunes
+### TODO List:   
+- [ ] Fix HTML
+- [ ] Hook up Heroku to Spotify -- figure out correct Redirect URI...
+- [ ] Convert cURL GET to Node.js
+- [ ] Extract user's top genres
+- [ ] Send email!
 
-
-2. Hook up Heroku to Spotify -- figure out correct Redirect URI...
-
-
-3. Convert cURL GET to Node.js
-
-Extract user's top genres
-
-
-4. Send email
+View it here: xxxx
 
