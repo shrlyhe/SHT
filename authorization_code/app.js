@@ -11,6 +11,8 @@ var express = require('express'); // Express web server framework
 var request = require('request'); // "Request" library
 var querystring = require('querystring');
 var cookieParser = require('cookie-parser');
+//correct...?
+var firebase = require('firebase');
 
 var client_id = '6020c8fabb1c4ee49643850c17e4d18f'; // Your client id
 var client_secret = 'ee07ab41c0d146f084468e4c4f378afc'; // Your secret

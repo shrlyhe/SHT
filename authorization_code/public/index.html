@@ -14,7 +14,10 @@
         width: 500px;
       }
     </style>
+
+    <script src="jquery-3.1.1.min.js"></script>
   </head>
+
 
   <body>
     <div class="container">
@@ -31,6 +34,21 @@
       </div>
     </div>
 
+    <!--adding Firebase-->
+    <script src="https://www.gstatic.com/firebasejs/3.6.9/firebase.js"></script>
+    <script>
+    // Initialize Firebase
+    var config = {
+      apiKey: "AIzaSyAucbAeDeCodtEbVdK_0_jzgVtoVjnkf14",
+      authDomain: "spotme-7d0ea.firebaseapp.com",
+      databaseURL: "https://spotme-7d0ea.firebaseio.com",
+      storageBucket: "spotme-7d0ea.appspot.com",
+      messagingSenderId: "848689393760"
+    };
+    firebase.initializeApp(config);
+    </script>
+    <!------------------------>
+
     <script id="user-profile-template" type="text/x-handlebars-template">
       <h1>Logged in as {{display_name}}</h1>
       <div class="media">
@@ -39,9 +57,9 @@
         </div>
         <div class="media-body">
           <dl class="dl-horizontal">
-            <dt>Display name</dt><dd class="clearfix">{{display_name}}</dd>
-            <dt>Id</dt><dd>{{id}}</dd>
-            <dt>Email</dt><dd>{{email}}</dd>
+            <dt>Display name</dt><dd class="clearfix" id="display_name">{{display_name}}</dd>
+            <dt>Id</dt><dd id="userID">{{id}}</dd>
+            <dt>Email</dt><dd id="email">{{email}}</dd>
             <dt>Spotify URI</dt><dd><a href="{{external_urls.spotify}}">{{external_urls.spotify}}</a></dd>
             <dt>Link</dt><dd><a href="{{href}}">{{href}}</a></dd>
             <dt>Profile Image</dt><dd class="clearfix"><a href="{{images.0.url}}">{{images.0.url}}</a></dd>
@@ -50,6 +68,7 @@
         </div>
       </div>
     </script>
+
 
     <script id="oauth-template" type="text/x-handlebars-template">
       <h2>oAuth info</h2>
@@ -137,6 +156,23 @@
         }
       })();
     </script>
+
+<!---MOVE SCRIPT TO HERE - GIVE PAGE TIME TO LOAD-->
+<script>
+  function sendUser() {
+    var userRef = firebase.database().ref('users');
+    var emailName=  document.getElementById("email").innerHTML;
+    var userID = document.getElementById("userID").innerHTML;
+    userRef.set({
+      username: userID,
+      email: emailName
+
+    });
+  }
+      // setTimer to force page to pause...
+      setTimeout(sendUser, 1000);
+</script>
+
   </body>
 </html>
 
