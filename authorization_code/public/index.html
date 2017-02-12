@@ -17,6 +17,18 @@
     </style>
 
     <script src="jquery-3.1.1.min.js"></script>
+
+
+
+<!-- adding EmailJS -->
+<!-- <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init("user_JSEY1wW0KLFdCHJ4Gt3T2");
+   })();
+</script> -->
+<!---------------------->
+
   </head>
 
 
@@ -176,7 +188,16 @@
   }
       // setTimer to force page to pause...
       setTimeout(sendUser, 1000);
+
+
+      ///send email...
+      // parameters: service_id, template_id, template_parameters
+emailjs.send("gmail","template_hBXpBWzd",{name: "James", notes: "Check this out!"});
+
 </script>
+
+
+
 
   </body>
 </html>

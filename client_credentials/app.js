@@ -37,8 +37,28 @@ request.post(authOptions, function(error, response, body) {
       },
       json: true
     };
+
     request.get(options, function(error, response, body) {
       console.log(body);
     });
   }
 });
+
+
+//GET user's top artists...
+
+
+    // //NEW - trying to do curl command....
+    // $.ajax({
+    //   url: 'https://api.spotify.com/v1/me/top/artists',
+    //   beforeSend: function(xhr) {
+    //     xhr.setRequestHeader("Authorization", "Bearer BQCazNHadFCufifVOkQtW4yvdgUe3SZC858-nlzyN7u2mfsGnMHB_mNz7XHJ45FiVxOL2Bgo6AxSW0uN75RdJuLkNMLV6ceH6qIX-t4BBzYMDceIonvN27OymfHFIZkBnNU-OCMrbX6ir2oL7nwhpk7KR5kaB2ui5J336O2YfUQ8M_onpyuYpxUq8sBYtueYYJ7gP9ompFHE2P-nrdY_iBuNyGpX1Xc6M0lDj6eJqe2CtyKPyT2E4Q")
+    //   }, success: function(data) {
+    //     alert(data);
+    //     //process the JSON
+    //     console.log(data);
+    //   }
+    // })
+
+
+
