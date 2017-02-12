@@ -16,11 +16,11 @@ var firebase = require('firebase');
 
 var client_id = '6020c8fabb1c4ee49643850c17e4d18f'; // Your client id
 var client_secret = 'ee07ab41c0d146f084468e4c4f378afc'; // Your secret
-var redirect_uri = 'https://hidden-earth-59765.herokuapp.com'; // Your redirect uri
+var redirect_uri = 'https://hidden-earth-59765.herokuapp.com/login/'; // Your redirect uri
 // var hostname = process.env.HOSTNAME || "localhost:8888"
 // var redirect_uri = hostname + '/callback'; // Your redirect uri
 //original link
-//var redirect_uri = 'http://localhost:8888/callback';
+//var redirect_uri = 'http://localhost:8888/callback/';
 
 /**
  * Generates a random string containing numbers and letters
