@@ -16,8 +16,7 @@ var firebase = require('firebase');
 
 var client_id = '6020c8fabb1c4ee49643850c17e4d18f'; // Your client id
 var client_secret = 'ee07ab41c0d146f084468e4c4f378afc'; // Your secret
-var hostname = process.env.HOSTNAME || "localhost:8888"
-var redirect_uri = hostname + '/callback'; // Your redirect uri
+var redirect_uri = 'https://hidden-earth-59765.herokuapp.com'; // Your redirect uri
 
 /**
  * Generates a random string containing numbers and letters
@@ -145,5 +144,5 @@ app.get('/refresh_token', function(req, res) {
 });
 
 var port = process.env.PORT || 8888;
-console.log('Listening on ' + port);
-app.listen(port);
+console.log('Listening on' + port);
+app.listen(8888);
