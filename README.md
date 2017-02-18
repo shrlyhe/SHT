@@ -1,11 +1,6 @@
 # SpotMe -- WHACK 2017
 ## A pick-me-up based on your frequently listened tunes
-### TODO List:   
-- [ ] Fix HTML
-- [ ] Hook up Heroku to Spotify -- figure out correct Redirect URI...
-- [ ] Convert cURL GET to Node.js
-- [ ] Extract user's top genres
-- [ ] Send email!
+![alt tag](https://68.media.tumblr.com/ce7e078c7fbc11eab5e2487e1214f1c4/tumblr_ohil93qCyH1uo6xyzo1_540.jpg)
 
-View it here: xxxx
+
 
